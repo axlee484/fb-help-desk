@@ -11,6 +11,7 @@ app.use(express.json());
 app.listen(PORT, () =>
   console.log("Server started at http://localhost:" + PORT)
 );
+app.get("/", (_req, res) => res.render("/signup"));
 app.use(userRoute);
 app.use(conversationRoute);
 app.use(messageRoute);
