@@ -1,0 +1,73 @@
+/* styles.css */
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #134479; /* Blue background */
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.form-container {
+  min-width: 300px;
+
+  padding: 40px;
+  background-color: #fff; /* White background for form box */
+  border-radius: 25px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add box shadow for form box */
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+.center-horizontal {
+  display: flex;
+  justify-content: center;
+}
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  height: 30px;
+}
+
+.button-blue {
+  padding: 10px 20px;
+  background-color: #134479;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #007bff;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+}
+
+.already-have-account {
+  margin-top: 20px;
+  font-size: 14px; /* Small font size */
+}
+
+.small {
+  font-size: 12px; /* Smaller font size for 'Login' */
+}
+
+.label {
+  display: block;
+}

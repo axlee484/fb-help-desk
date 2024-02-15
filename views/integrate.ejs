@@ -1,0 +1,41 @@
+<!-- signup.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Account</title>
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <div id="fb-root"></div>
+    <script
+      async
+      defer
+      crossorigin="anonymous"
+      src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v19.0&appId=341459222210881"
+      nonce="qyGBJ7Aq"
+    ></script>
+    <div class="form-container">
+      <div class="center-horizontal">
+        <h2>Facebook Page integration</h2>
+      </div>
+      <form id="createAccountForm">
+        <div class="center-horizontal">
+          <div
+            class="fb-login-button"
+            data-width=""
+            data-size=""
+            data-button-type=""
+            data-layout=""
+            data-auto-logout-link="false"
+            data-use-continue-as="false"
+          >
+            Connect Page
+          </div>
+        </div>
+      </form>
+    </div>
+    <script src="js/integrate.js"></script>
+  </body>
+</html>

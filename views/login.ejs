@@ -1,0 +1,55 @@
+<!-- login.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <div class="form-container">
+      <div class="center-horizontal">
+        <h2>Login to your account</h2>
+      </div>
+      <form id="loginForm">
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            class="input-field"
+            required
+          />
+          <span id="emailError" class="error"></span>
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            class="input-field"
+            required
+          />
+          <span id="passwordError" class="error"></span>
+        </div>
+        <div class="form-group">
+          <input type="checkbox" id="rememberMe" name="rememberMe" />Remember me
+          <label for="rememberMe"></label>
+        </div>
+        <div class="center-horizontal">
+          <button type="submit" class="button-blue">Login</button>
+        </div>
+        <div class="already-have-account">
+          <p class="center-horizontal small">
+            New to MyApp?
+            <a href="http://localhost:5000/signup" target="_blank">Signup</a>
+          </p>
+        </div>
+      </form>
+    </div>
+    <script src="js/login.js"></script>
+  </body>
+</html>
